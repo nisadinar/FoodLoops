@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303FFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundlogin">#EFF5FF</color>
+    <color name="darkblue">#3023AE</color>
+    <color name="purple">#c86dd7</color>
+    <color name="greenPastel">#3cd3ad</color>
+    <color name="bluePastel">#4cb8c4</color>
+
+
+    <color name="loginFormDetail">#ccffffff</color>
+    <color name="loginFormDetailLight">#1affffff</color>
+    <color name="loginFormDetailMedium">#66ffffff</color>
+
+    <color name="pencarianForm">#05FFFFFF</color>
+    <color name="pencarian">#D6090505</color>
+    <color name="fontHint">#DCE9FF</color>
+    <color name="fontForm">#858F9B</color>
+</resources>

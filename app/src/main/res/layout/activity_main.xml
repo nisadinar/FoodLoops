@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundHome"
+                tools:context=".HomeActivity">
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="60dp" />
+
+
+    <EditText
+            android:id="@+id/search"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/cari_bg"
+            android:hint="Pencarian"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColorHint="@color/pencarian"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@id/guideline_right"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="382dp"
+            android:layout_height="279dp"
+            android:layout_above="@+id/imageView14"
+            android:layout_alignParentStart="true"
+            app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/search"
+            app:layout_constraintVertical_bias="0.934" />
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView"
+            android:text="BAYAR Rp. 0"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="31dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_marginTop="55dp"
+            app:srcCompat="@drawable/filter"
+            tools:layout_editor_absoluteX="314dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="42dp"
+            android:layout_height="41dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            app:srcCompat="@drawable/stock"
+            tools:layout_editor_absoluteX="326dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+    <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="56dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="81dp"
+            app:srcCompat="@drawable/person"
+            tools:layout_editor_absoluteX="287dp"
+            tools:layout_editor_absoluteY="508dp" />
+
+    <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="68dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/activity"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="421dp" />
+
+    <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/history"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="498dp" />
+
+</RelativeLayout>

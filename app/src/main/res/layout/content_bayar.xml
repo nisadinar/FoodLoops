@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="44dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/back" />
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="79dp"
+            android:text="RP. 0" />
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_marginEnd="23dp"
+            android:text="BAYAR" />
+
+    <EditText
+            android:id="@+id/promo"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView4"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/et_bg"
+            android:hint="promo kode"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="kode promo"
+            android:textColorHint="@color/loginFormDetail"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right"
+            app:layout_constraintStart_toEndOf="@id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+            android:id="@+id/bayar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="136dp"
+            android:background="@drawable/et_bg"
+            android:hint="bayar"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="Rp."
+            android:textColorHint="@color/loginFormDetail"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right"
+            app:layout_constraintStart_toEndOf="@id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+            android:id="@+id/kembali"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/bayar"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/et_bg"
+            android:hint="kembali"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="Rp."
+            android:textColorHint="@color/loginFormDetail"
+            app:layout_constraintEnd_toStartOf="@id/guideline_right"
+            app:layout_constraintStart_toEndOf="@id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView4"
+            android:layout_below="@+id/bayar"
+            android:text="CASH" />
+
+    <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="230dp"
+            android:text="CARD" />
+</RelativeLayout>
